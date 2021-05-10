@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "437428592254",
+    "firebase_url": "https://storywriter-64eec.firebaseio.com",
+    "project_id": "storywriter-64eec",
+    "storage_bucket": "storywriter-64eec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437428592254:android:21591f3f8ab811ad",
+        "android_client_info": {
+          "package_name": "com.inspiredmedia.storywriter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437428592254-c1lntjjgdl1947rav2muq44uqj9ua83g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inspiredmedia.storywriter",
+            "certificate_hash": "d008c479fb84d9aaa4c6611a23f91310a7ab50f5"
+          }
+        },
+        {
+          "client_id": "437428592254-o5eai7oob7vu46kf77j1ollh97elofir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8VhoNNjP3oGcdl6Me2c3nQUbKNLTI0GU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "437428592254-o5eai7oob7vu46kf77j1ollh97elofir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

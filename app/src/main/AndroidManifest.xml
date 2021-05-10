@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.inspiredmedia.storywriter">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/storywriterlogo"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/storywriterlogo"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+                android:name=".MainActivity"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data
+                android:name="com.google.android.gms.ads.APPLICATION_ID"
+                android:value="ca-app-pub-8569563470793396~9060036258"/>
+
+        <activity
+                android:name=".LatestStoriesActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".RegisterActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".LoginActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".StoryActivity"
+                android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

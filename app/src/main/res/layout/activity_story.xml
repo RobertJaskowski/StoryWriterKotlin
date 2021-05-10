@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".StoryActivity"
+        android:id="@+id/activity_story_parent_constraint">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:id="@+id/recycler_story"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/sendingRoot"/>
+
+    <com.like.LikeButton
+            app:icon_type="heart"
+            app:icon_size="25dp"
+            android:id="@+id/favorite_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:liked="false"
+            app:like_drawable="@drawable/ic_favorite_red_filled_48dp"
+            app:unlike_drawable="@drawable/ic_favorite_red_outline_48dp"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toTopOf="@id/sendingRoot"
+            >
+
+
+        <LinearLayout
+                android:id="@+id/charactersLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/addPerson"
+                android:layout_margin="10dp"
+                >
+
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_white_24dp"
+                app:maxImageSize="30dp"
+                app:fabSize="mini"
+                android:layout_margin="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent
+"
+                />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:text="CHARACTERS"
+            android:rotation="90"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/sendingRoot"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/textView"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/sendingRoot"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/send_button_story"
+                android:id="@+id/text_tip_input_story"
+                android:theme="@style/TextLabel"
+                >
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="No character selected"
+                    android:id="@+id/edittext_story"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/send"
+
+
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:id="@+id/send_button_story"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
