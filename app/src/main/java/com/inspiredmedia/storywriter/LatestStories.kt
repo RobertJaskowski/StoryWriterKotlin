@@ -31,12 +31,13 @@ class LatestStories : Fragment() {
         fun newInstance(): LatestStories = LatestStories()
         val EXTRA_UUID = "UUID"
         val EXTRA_TITLE = "TITLE"
-    }
+    }}
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_latest_stories, container, false)
     }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
@@ -188,4 +189,4 @@ class LatestStoryItem(val title: String, val roomUUID: String) : Item<ViewHolder
     override fun getLayout(): Int {
         return R.layout.latest_story_row
     }
-}
+}*/

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "437428592254-3s6b2eo242rtgu0o86hr01br4ga7veo8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inspiredmedia.storywriter",
+            "certificate_hash": "4467777097e86275dee21d80e478d183edc34ee6"
+          }
+        },
+        {
           "client_id": "437428592254-c1lntjjgdl1947rav2muq44uqj9ua83g.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -41,7 +49,8 @@
             }
           ]
         }
-      }
+      },
+      "admob_app_id": "ca-app-pub-8569563470793396~9060036258"
     }
   ],
   "configuration_version": "1"
